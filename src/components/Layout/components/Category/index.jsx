@@ -71,7 +71,7 @@ export default function CategoryComponent() {
             width: "100%",
             display: "flex",
             height: "80px",
-            justifyContent: "space-around",
+            justifyContent: "space-between",
             gap: "4px",
             margin: "0px 15px",
             padding: "0px 5px",
@@ -84,6 +84,9 @@ export default function CategoryComponent() {
             changeCategoryDisplay={changeCategoryDisplayPrev}
             navigate={true}
           />
+          <Box sx={{
+            width: "100%",
+          }}>
           {data
             .filter((cat) => cat.gender === gender)
             .map((category, index) => {
@@ -97,6 +100,7 @@ export default function CategoryComponent() {
               }
               return null;
             })}
+          </Box>
           <ChangeButtonComponent
             disabled={
               !(
