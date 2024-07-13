@@ -7,7 +7,6 @@ export default function SearchComponent() {
 
   const searchClickHandler = (e) => {
     e.stopPropagation();
-    console.log(text);
   };
 
   return (
