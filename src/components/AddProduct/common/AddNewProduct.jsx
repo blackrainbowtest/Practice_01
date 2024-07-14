@@ -87,7 +87,6 @@ export default function AddNewProduct({ handleClose }) {
   const addClickHandle = (e) => {
     e.stopPropagation();
     if (code.trim() && Number(price) > 0 && selectedImage.length) {
-      console.log(gender, choosedCategory, value, code, price, selectedImage.length);
       handleClose();
       const newData = {
         image: selectedImage,
